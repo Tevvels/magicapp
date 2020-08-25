@@ -1,28 +1,29 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const CardSchema = new Schema({
-	cardName:{
-		type: String;
-		required: true;
-	}
-	cardType:{
-		type: String;
-		required: true;
-	}
-	cardAttribute:{
-		type: String;
-		required: true;
-	}
-	cardSet:{
-		type: String;
-		required: true;
-	}
-	cardDesc:{
-		type: String;
-		required: true;
-	}	
-});
 
-const Card = mongoose.model('Card',CardSchema);
-module.exports = Card; 
+const cardSchema = new Schema({
+
+	cardName:{
+		type:String;
+
+	},
+	cardCost:{
+		type:String;
+
+	},
+	cardSet:{
+		type:String;
+
+	},
+	cardType:{
+		type:String;
+
+	},
+	cardDesc:{
+		type:String;
+
+	},				
+});
+const card - mongoose.model("card",cardSchema);
+module.exports = card;
